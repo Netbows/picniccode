@@ -42,8 +42,11 @@ class MyClass implements Runnable {
     }
 
     public void run() {
+        String ip = "192.168.1.161";
+        String puerto = "9765";
+        
         try {
-            System.out.println("Esperando eventos...");
+            System.out.println("Ha llegado un evento!!");
             BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             
             //Procesamos evento
@@ -53,12 +56,13 @@ class MyClass implements Runnable {
             //Ejecutamos nuestro código
             NBApi api = new NBApi();
             NetbowsCommand terminal = new NetbowsCommand();
+             //Configuración de la RED y Servidor al que envía la mi Netbows
+            NBNetwork miNetbows = new NBNetwork(ip);
             
             
             //Tu código AQUI
-            
-            
-            
+
+           
             socket.close();
             
         } catch (IOException e) {

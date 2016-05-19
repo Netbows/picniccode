@@ -31,7 +31,7 @@ public class ConfigNetwork {
         ConfigNetwork init = new ConfigNetwork();
         
         NBNetwork miNetbows = new NBNetwork();
-        miNetbows.setIp("192.168.1.166");
+        miNetbows.setIp("192.168.1.161");
         miNetbows.setSSID("Netbows");
         miNetbows.setPassword("netbows765");
         miNetbows.setPort(9765);
