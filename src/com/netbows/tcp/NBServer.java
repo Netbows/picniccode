@@ -4,8 +4,6 @@ import com.netbows.api.NBApi;
 import com.netbows.components.NBNetwork;
 import com.netbows.components.NBSensor;
 import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
@@ -56,15 +54,10 @@ class MyClass implements Runnable {
             NBApi api = new NBApi();
             NetbowsCommand terminal = new NetbowsCommand();
             
-            //Configuración de la RED y Servidor al que envía la mi Netbows
-            NBNetwork miNetbows = new NBNetwork("192.168.1.162");
-
-            //Nos comunicamos con la netbows para pedirle el dato del caudalímetro
-            NBSensor sensor = api.getSensorValue(miNetbows, "PLUG2");
-            System.out.println("Sensor:" + sensor.getId() + " presenta el valor: " + sensor.getValue() + " " + sensor.getUnit());
             
-            //reseteamos los pulsos
-            terminal.sendCommand("192.168.1.162", "9765", "AT!FMRP");
+            //Tu código AQUI
+            
+            
             
             socket.close();
             

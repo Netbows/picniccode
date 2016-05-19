@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Bienvenidos al Taller de Netbows");
         
         //Configuración de la RED y Servidor al que envía la mi Netbows
-        NBNetwork miNetbows = new NBNetwork("192.168.1.162");
+        NBNetwork miNetbows = new NBNetwork("192.168.1.201");
        
 
         
@@ -53,6 +53,7 @@ public class Main {
       
         //Para procesar los datos de los sensores analógicos
         Formulas formulas = new Formulas();
+        
         
         System.out.println();
         

@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 import com.netbows.commands.NetbowsCommand;
-import utils.json.JSONArray;
-import utils.json.JSONObject;
+import com.utils.json.JSONArray;
+import com.utils.json.JSONObject;
 
 /**
  *

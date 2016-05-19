@@ -1,4 +1,4 @@
-package utils.json;
+package com.utils.json;
 
 import java.io.IOException;
 import java.io.Writer;
